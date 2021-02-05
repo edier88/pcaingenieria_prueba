@@ -2,9 +2,9 @@
 
 ## Para ejecutar la pagina web:
 
-1. Bajarse la imagen del contenedor de MySQL
+1. Clonar el presente GIT
 
-2. Después de bajar la imagen, cargarla a Docker y ejecutarla insertando estos comandos a la terminal:
+2. En este GIT existe una Imagen docker de MySQL y la base de datos con algunos datos de prueba. Para tenerla funcionando, es necesario correr los siguientes scripts:
 	
 ```
 # docker load -i pca-mysql.tar
