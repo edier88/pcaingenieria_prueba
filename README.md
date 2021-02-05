@@ -4,13 +4,14 @@
 
 1. Clonar el presente GIT
 
-2. En este GIT existe una Imagen docker de MySQL y la base de datos con algunos datos de prueba. Para tenerla funcionando, es necesario correr los siguientes scripts:
+2. Ejecutar el siguiente Script para generar un contenedor de Mysql y guardar la base de datos de usuarios de prueba para probar el aplicativo:
 	
 ```
-# docker load -i pca-mysql.tar
-# docker run --name pca-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
+# docker pull mysql:5.6
+# docker run --name pca-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
 # mysql -h 127.0.0.1 -u root -proot
 mysql> CREATE DATABASE apuestas_DB CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+mysql> CREATE TABLE apuestas_DB.usuarios (id INT NOT NULL AUTO_INCREMENT, usuario VARCHAR (20), dinero INT, PRIMARY KEY (id) ) CHARACTER SET latin1 COLLATE latin1_swedish_ci ENGINE MyISAM;
 mysql> quit;
 # docker exec -i pca-mysql mysql --user root --password=root apuestas_DB < apuestas_DB.dump
 ```
