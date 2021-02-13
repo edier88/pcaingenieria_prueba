@@ -1,0 +1,37 @@
+# This is a comment
+# La version es basada en el Docker Engine. Consultar la documentacion de Docker al respecto
+# Para saber version de Docker Engine, poner: "docker version" en la Terminal
+
+version: '3.3'
+
+services:
+  web:
+    # container_name: palaciorosa_php_server
+    build: .
+    # Se necesita construir (build) el container de PHP desde el Dockerfile ubicado en este mismo directorio.
+    # Esto es porque en el Dockerfile reside la instruccion para instalar la extension "mysqli"
+    ports:
+      - 8000:80
+    links:
+      - db_pca
+    # links: 
+      # - mysql:mysql
+      # - palaciorosa_mysql_server
+      # - palaciorosa_mysql_server:mysql
+    volumes:
+      - ./webpage:/var/www/html
+
+  db_pca:
+    image: mysql
+    # container_name: palaciorosa_mysql_server
+    command: --default-authentication-plugin=mysql_native_password
+    # The above "command" is for avoiding 'caching_sha2_password', which is the default authentication in MySQL 8.0
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: apuestas_DB
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+
