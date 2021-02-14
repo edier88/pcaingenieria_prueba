@@ -25,9 +25,6 @@ _(Cada línea es un script diferente, pegue línea por línea en la terminal, un
 ```
 2. Tras ejecutar los anteriores scripts, puede entrar al aplicativo en cualquier explorador poniendo en la URL: _http://localhost:8000_
 
-### Autores ✒️
-
-* **Edier Guzmán** - *Trabajo Inicial* - [edier88](https://github.com/edier88/pcaingenieria_prueba)
 
 ### Notas finales a tener en cuenta 📄
 
@@ -37,3 +34,8 @@ _(Cada línea es un script diferente, pegue línea por línea en la terminal, un
 * *Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar una estética más completa de la página.*
 * *Se usó Docker version 19. Se usó un archivo "Dockerfile" y "docker compose" para la generar los contenedores y bajar sus imágenes facilmente.*
 
+
+
+### Autores ✒️
+
+* **Edier Guzmán** - *Trabajo Inicial* - [edier88](https://github.com/edier88/pcaingenieria_prueba)
