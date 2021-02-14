@@ -1,20 +1,19 @@
 # Prueba aptitudes técnicas PCAINGENIERIA
 
 ## Descripción:
-
 El presente proyecto es una prueba técnica presentada a la empresa PCA INGENIERIA.
 
 ### Pre-requisitos 📋
 
 Asegúrese de tener Docker instalado en su sistema.
-_Las instrucciones de instalación se escribieron teniendo en cuenta un sistema tipo Unix en la maquina donde se va a instalar el aplicativo web.
-Si usa Windows, puede que los comandos no le sirvan al pie de la letra.
+_Las instrucciones de instalación se escribieron teniendo en cuenta un sistema tipo Unix en la maquina donde se va a instalar el aplicativo web._
+_Si usa Windows, puede que los comandos no le sirvan al pie de la letra._
 
 ### Instalación 🔧
 
 
 1. Ejecute el siguiente Script para generar el contenedor de PHP con Apache que contendrá el aplicativo web y el contenedor de MySQL que contendrá la base de datos:
-_(Cada línea es un script diferente, pegue línea por línea en la terminal, una a la vez)
+_(Cada línea es un script diferente, pegue línea por línea en la terminal, una a la vez)_
 	
 ```
 # clone https://github.com/edier88/pcaingenieria_prueba.git
