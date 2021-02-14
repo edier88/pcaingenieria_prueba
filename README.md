@@ -1,24 +1,40 @@
-# pcaingenieria_prueba
+# Prueba aptitudes técnicas PCAINGENIERIA
 
-## Para ejecutar la pagina web:
+## Descripción:
 
-1. Clonar el presente GIT
+El presente proyecto es una prueba técnica presentada a la empresa PCA INGENIERIA.
 
-2. Ejecutar el siguiente Script para generar un contenedor de Mysql y guardar la base de datos de usuarios de prueba para probar el aplicativo:
+### Pre-requisitos 📋
+
+Asegúrese de tener Docker instalado en su sistema.
+_Las instrucciones de instalación se escribieron teniendo en cuenta un sistema tipo Unix en la maquina donde se va a instalar el aplicativo web.
+Si usa Windows, puede que los comandos no le sirvan al pie de la letra.
+
+### Instalación 🔧
+
+
+1. Ejecute el siguiente Script para generar el contenedor de PHP con Apache que contendrá el aplicativo web y el contenedor de MySQL que contendrá la base de datos:
+_(Cada línea es un script diferente, pegue línea por línea en la terminal, una a la vez)
 	
 ```
-# docker pull mysql:5.6
-# docker run --name pca-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
-# mysql -h 127.0.0.1 -u root -proot
-mysql> CREATE DATABASE apuestas_DB CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-mysql> CREATE TABLE apuestas_DB.usuarios (id INT NOT NULL AUTO_INCREMENT, usuario VARCHAR (20), dinero INT, PRIMARY KEY (id) ) CHARACTER SET latin1 COLLATE latin1_swedish_ci ENGINE MyISAM;
-mysql> quit;
-# docker exec -i pca-mysql mysql --user root --password=root apuestas_DB < apuestas_DB.dump
+# clone https://github.com/edier88/pcaingenieria_prueba.git
+# cd pcaingenieria_prueba
+# docker-compose up -d
 ```
+2. Tras ejecutar los anteriores scripts, puede entrar al aplicativo en cualquier explorador poniendo en la URL: _http://localhost:8000
 
-3. Cuando se tenga la base de datos configurada, se puede copiar la carpeta "apuesta_webpage" a un servidor web local, encender el servidor y abrir la pagina web en cualquier explorador: "localhost/apuesta_webpage"
+## Notas finales a tener en cuenta 📄
 
-4. El aplicativo se hizo en PHP con un Modelo Vista Controlador.
-5. El frontend se elaboró con CSS y Javascript
-6. El Frontend y Backend se comunican mediante la API Ajax de Jquery.
-7. Se usó Bootstrap para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+
+### Autores ✒️
+
+* **Edier Guzmán** - *Trabajo Inicial* - [edier88](https://github.com/edier88/pcaingenieria_prueba)
+
+
+
+* **El aplicativo se hizo en PHP con un Modelo Vista Controlador.**
+* **El frontend se elaboró con CSS y Javascript**
+* **El Frontend y Backend se comunican mediante la API de AXIOS**
+* **Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página**
+
