@@ -9,7 +9,7 @@ Asegúrese de tener Docker instalado en su sistema.
 
 _Las instrucciones de instalación se escribieron teniendo en cuenta un sistema tipo Unix en la maquina donde se va a instalar el aplicativo web._
 
-_Si usa Windows, puede que los comandos no le sirvan al pie de la letra._
+_Si usa Windows, puede que los comandos del script de instalación no le sirvan al pie de la letra._
 
 ### Instalación 🔧
 
@@ -31,8 +31,8 @@ _(Cada línea es un script diferente, pegue línea por línea en la terminal, un
 
 ## Notas finales a tener en cuenta 📄
 
-* **El aplicativo se hizo en PHP con un Modelo Vista Controlador.**
-* **El frontend se elaboró con CSS y Javascript**
-* **El Frontend y Backend se comunican mediante la API de AXIOS**
-* **Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página**
+* *El aplicativo se hizo en PHP con un Modelo Vista Controlador.*
+* *El frontend se elaboró con CSS y Javascript*
+* *El Frontend y Backend se comunican mediante la API de AXIOS*
+* *Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página*
 
