@@ -1,4 +1,4 @@
-# Prueba aptitudes técnicas PCAINGENIERIA
+# Prueba aptitudes técnicas PCA INGENIERIA
 
 ## Descripción:
 El presente proyecto es una prueba técnica presentada a la empresa PCA INGENIERIA.
