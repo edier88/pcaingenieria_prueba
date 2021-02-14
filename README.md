@@ -29,7 +29,7 @@ _(Cada línea es un script diferente, pegue línea por línea en la terminal, un
 
 * **Edier Guzmán** - *Trabajo Inicial* - [edier88](https://github.com/edier88/pcaingenieria_prueba)
 
-## Notas finales a tener en cuenta 📄
+### Notas finales a tener en cuenta 📄
 
 * *El Backend del aplicativo se hizo en PHP con un Modelo Vista Controlador.*
 * *El Frontend se elaboró con CSS, HTML y Javascript.*
