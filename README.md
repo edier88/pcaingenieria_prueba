@@ -32,7 +32,8 @@ _(Cada línea es un script diferente, pegue línea por línea en la terminal, un
 ## Notas finales a tener en cuenta 📄
 
 * *El aplicativo se hizo en PHP con un Modelo Vista Controlador.*
-* *El frontend se elaboró con CSS y Javascript*
-* *El Frontend y Backend se comunican mediante la API de AXIOS*
-* *Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página*
+* *El frontend se elaboró con CSS y Javascript.*
+* *El Frontend y Backend se comunican mediante la API de AXIOS.*
+* *Se usó Bootstrap 5 beta 2 para los botones, debido a la falta de tiempo no se pudo generar un diseño más completo de la página.*
+* *Se usó Docker version 19. Se usó un archivo "Dockerfile" y "docker compose" para la generar los contenedores y bajar sus imágenes facilmente.*
 
